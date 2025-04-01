@@ -1,4 +1,4 @@
-function! slime#targets#wezterm#config() abort
+function! slime#targets#weztermWSL#config() abort
   if !exists("b:slime_config")
     let b:slime_config = {"pane_id": 1}
   elseif exists("b:slime_config.pane_direction")
