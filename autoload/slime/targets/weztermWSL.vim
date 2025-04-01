@@ -9,7 +9,7 @@ function! slime#targets#weztermWSL#config() abort
   let b:slime_config["pane_id"] = input("wezterm pane_id: ", b:slime_config["pane_id"])
 endfunction
 
-function! slime#targets#wezterm#send(config, text)
+function! slime#targets#weztermWSL#send(config, text)
   let [bracketed_paste, text_to_paste, has_crlf] = slime#common#bracketed_paste(a:text)
 
   if bracketed_paste
